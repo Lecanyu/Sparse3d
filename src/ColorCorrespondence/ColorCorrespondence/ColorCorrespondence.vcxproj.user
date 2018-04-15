@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommandArguments>../sandbox/pointcloud/ ../sandbox/pointcloud_ds/ ../sandbox/depth/ ../sandbox/camera_para.txt ../sandbox/sift_correspondence.txt ../sandbox/sift_traj.txt ../sandbox/sift_info.txt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
