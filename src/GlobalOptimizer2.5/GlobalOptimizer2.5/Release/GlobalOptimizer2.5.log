@@ -1,0 +1,642 @@
+﻿  main.cpp
+D:\3rdParty\g2o\g2o/types/slam3d/se3quat.h(46): warning C4251: 'g2o::SE3Quat::_r' : class 'Eigen::Quaternion<double,0>' needs to have dll-interface to be used by clients of class 'g2o::SE3Quat'
+D:\3rdParty\g2o\g2o/types/slam3d/se3quat.h(47): warning C4251: 'g2o::SE3Quat::_t' : class 'Eigen::Matrix<double,3,1,0,3,1>' needs to have dll-interface to be used by clients of class 'g2o::SE3Quat'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(29): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(34): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(36): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(38): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(40): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(42): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(56): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(61): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(63): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(65): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(67): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(69): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(78): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(120): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(125): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(127): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(129): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(131): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(133): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(135): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(137): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(145): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+  OptApp.cpp
+D:\3rdParty\g2o\g2o/types/slam3d/se3quat.h(46): warning C4251: 'g2o::SE3Quat::_r' : class 'Eigen::Quaternion<double,0>' needs to have dll-interface to be used by clients of class 'g2o::SE3Quat'
+D:\3rdParty\g2o\g2o/types/slam3d/se3quat.h(47): warning C4251: 'g2o::SE3Quat::_t' : class 'Eigen::Matrix<double,3,1,0,3,1>' needs to have dll-interface to be used by clients of class 'g2o::SE3Quat'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(29): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(34): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(36): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(38): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(40): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(42): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(56): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(61): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(63): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(65): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(67): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(69): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(78): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(120): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(125): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(127): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(129): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(131): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(133): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(135): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(137): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+c:\users\range\desktop\sparse3d_github\sparse3d\src\globaloptimizer2.5\globaloptimizer2.5\helper.h(145): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(157): warning C4251: 'g2o::HyperGraph::Vertex::_edges' : class 'std::set<g2o::HyperGraph::Edge *,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph::Vertex'
+          with
+          [
+              _Kty=g2o::HyperGraph::Edge *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(202): warning C4251: 'g2o::HyperGraph::Edge::_vertices' : class 'std::vector<g2o::HyperGraph::Vertex *,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph::Edge'
+          with
+          [
+              _Kty=g2o::HyperGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(274): warning C4251: 'g2o::HyperGraph::_vertices' : class 'std::unordered_map<int,g2o::HyperGraph::Vertex *,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph'
+          with
+          [
+              _Kty=int
+  ,            _Ty=g2o::HyperGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(275): warning C4251: 'g2o::HyperGraph::_edges' : class 'std::set<g2o::HyperGraph::Edge *,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph'
+          with
+          [
+              _Kty=g2o::HyperGraph::Edge *
+          ]
+d:\3rdparty\g2o\g2o\core\jacobian_workspace.h(91): warning C4251: 'g2o::JacobianWorkspace::_workspace' : class 'std::vector<g2o::VectorXD,Eigen::aligned_allocator<g2o::VectorXD>>' needs to have dll-interface to be used by clients of class 'g2o::JacobianWorkspace'
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(322): warning C4251: 'g2o::OptimizableGraph::Vertex::_quadraticFormMutex' : class 'g2o::OpenMPMutex' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Vertex'
+          d:\3rdparty\g2o\g2o\core\openmp_mutex.h(63) : see declaration of 'g2o::OpenMPMutex'
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(470): warning C4251: 'g2o::OptimizableGraph::Edge::_cacheIds' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=int
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(490): warning C4251: 'g2o::OptimizableGraph::Edge::_parameterTypes' : class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(491): warning C4251: 'g2o::OptimizableGraph::Edge::_parameters' : class 'std::vector<g2o::Parameter **,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=g2o::Parameter **
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(492): warning C4251: 'g2o::OptimizableGraph::Edge::_parameterIds' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=int
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(655): warning C4251: 'g2o::OptimizableGraph::_renamedTypesLookup' : class 'std::map<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(657): warning C4251: 'g2o::OptimizableGraph::_graphActions' : class 'std::vector<g2o::OptimizableGraph::HyperGraphActionSet,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          with
+          [
+              _Ty=g2o::OptimizableGraph::HyperGraphActionSet
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(662): warning C4251: 'g2o::OptimizableGraph::_parameters' : class 'g2o::ParameterContainer' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          d:\3rdparty\g2o\g2o\core\parameter_container.h(41) : see declaration of 'g2o::ParameterContainer'
+D:\3rdParty\g2o\g2o/stuff/property.h(47): warning C4251: 'g2o::BaseProperty::_name' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'g2o::BaseProperty'
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(103): warning C4251: 'g2o::HyperGraphElementAction::_typeName' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphElementAction'
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(104): warning C4251: 'g2o::HyperGraphElementAction::_name' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphElementAction'
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(129): warning C4251: 'g2o::HyperGraphElementActionCollection::_actionMap' : class 'std::map<std::string,g2o::HyperGraphElementAction *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphElementActionCollection'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=g2o::HyperGraphElementAction *
+          ]
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(155): warning C4251: 'g2o::HyperGraphActionLibrary::_actionMap' : class 'std::map<std::string,g2o::HyperGraphElementAction *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphActionLibrary'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=g2o::HyperGraphElementAction *
+          ]
+d:\3rdparty\g2o\g2o\types\slam3d\vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_hessian' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+d:\3rdparty\g2o\g2o\types\slam3d\vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_b' : class 'Eigen::Matrix<double,6,1,0,6,1>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+d:\3rdparty\g2o\g2o\types\slam3d\vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_estimate' : class 'Eigen::Transform<double,3,1,0>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+d:\3rdparty\g2o\g2o\types\slam3d\vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_backup' : class 'std::stack<Eigen::Transform<double,3,1,0>,std::vector<Eigen::Transform<double,3,1,0>,Eigen::aligned_allocator<Eigen::Transform<double,3,1,0>>>>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseEdge<6,E>::_measurement' : class 'Eigen::Transform<double,3,1,0>' needs to have dll-interface to be used by clients of class 'g2o::BaseEdge<6,E>'
+          with
+          [
+              E=g2o::Isometry3D
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseEdge<6,E>::_information' : class 'Eigen::Matrix<double,6,6,0,6,6>' needs to have dll-interface to be used by clients of class 'g2o::BaseEdge<6,E>'
+          with
+          [
+              E=g2o::Isometry3D
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseEdge<6,E>::_error' : class 'Eigen::Matrix<double,6,1,0,6,1>' needs to have dll-interface to be used by clients of class 'g2o::BaseEdge<6,E>'
+          with
+          [
+              E=g2o::Isometry3D
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_hessian' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_hessianTransposed' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_jacobianOplusXi' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_jacobianOplusXj' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(58): warning C4251: 'g2o::EdgeSE3::_inverseMeasurement' : class 'Eigen::Transform<double,3,1,0>' needs to have dll-interface to be used by clients of class 'g2o::EdgeSE3'
+d:\3rdparty\g2o\g2o\core\sparse_optimizer.h(294): warning C4251: 'g2o::SparseOptimizer::_ivMap' : class 'std::vector<g2o::OptimizableGraph::Vertex *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::SparseOptimizer'
+          with
+          [
+              _Ty=g2o::OptimizableGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\sparse_optimizer.h(295): warning C4251: 'g2o::SparseOptimizer::_activeVertices' : class 'std::vector<g2o::OptimizableGraph::Vertex *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::SparseOptimizer'
+          with
+          [
+              _Ty=g2o::OptimizableGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\sparse_optimizer.h(296): warning C4251: 'g2o::SparseOptimizer::_activeEdges' : class 'std::vector<g2o::OptimizableGraph::Edge *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::SparseOptimizer'
+          with
+          [
+              _Ty=g2o::OptimizableGraph::Edge *
+          ]
+d:\3rdparty\g2o\g2o\core\sparse_optimizer.h(308): warning C4251: 'g2o::SparseOptimizer::_batchStatistics' : class 'std::vector<g2o::G2OBatchStatistics,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::SparseOptimizer'
+          with
+          [
+              _Ty=g2o::G2OBatchStatistics
+          ]
+D:\3rdParty\g2o\g2o/stuff/timeutil.h(122): warning C4251: 'g2o::ScopeTime::_title' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'g2o::ScopeTime'
+D:\3rdParty\g2o\g2o/core/marginal_covariance_cholesky.h(86): warning C4251: 'g2o::MarginalCovarianceCholesky::_map' : class 'std::unordered_map<int,double,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::MarginalCovarianceCholesky'
+          with
+          [
+              _Kty=int
+  ,            _Ty=double
+          ]
+D:\3rdParty\g2o\g2o/core/marginal_covariance_cholesky.h(87): warning C4251: 'g2o::MarginalCovarianceCholesky::_diag' : class 'std::vector<double,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::MarginalCovarianceCholesky'
+          with
+          [
+              _Ty=double
+          ]
+D:\3rdParty\g2o\g2o/core/factory.h(123): warning C4251: 'g2o::Factory::_creator' : class 'std::map<std::string,g2o::Factory::CreatorInformation *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::Factory'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=g2o::Factory::CreatorInformation *
+          ]
+D:\3rdParty\g2o\g2o/core/factory.h(124): warning C4251: 'g2o::Factory::_tagLookup' : class 'std::map<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::Factory'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimization_algorithm_property.h(41): warning C4251: 'g2o::OptimizationAlgorithmProperty::name' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizationAlgorithmProperty'
+d:\3rdparty\g2o\g2o\core\optimization_algorithm_property.h(42): warning C4251: 'g2o::OptimizationAlgorithmProperty::desc' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizationAlgorithmProperty'
+d:\3rdparty\g2o\g2o\core\optimization_algorithm_property.h(43): warning C4251: 'g2o::OptimizationAlgorithmProperty::type' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizationAlgorithmProperty'
+D:\3rdParty\g2o\g2o/core/optimization_algorithm_factory.h(111): warning C4251: 'g2o::OptimizationAlgorithmFactory::_creator' : class 'std::list<g2o::AbstractOptimizationAlgorithmCreator *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizationAlgorithmFactory'
+          with
+          [
+              _Ty=g2o::AbstractOptimizationAlgorithmCreator *
+          ]
+OptApp.cpp(29): warning C4018: '<' : signed/unsigned mismatch
+OptApp.cpp(55): warning C4018: '<' : signed/unsigned mismatch
+OptApp.cpp(152): warning C4018: '<' : signed/unsigned mismatch
+OptApp.cpp(170): warning C4018: '<' : signed/unsigned mismatch
+OptApp.cpp(178): warning C4018: '<' : signed/unsigned mismatch
+OptApp.cpp(262): warning C4018: '<' : signed/unsigned mismatch
+OptApp.cpp(297): warning C4018: '<' : signed/unsigned mismatch
+  edge_se3Switchable.cpp
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(157): warning C4251: 'g2o::HyperGraph::Vertex::_edges' : class 'std::set<g2o::HyperGraph::Edge *,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph::Vertex'
+          with
+          [
+              _Kty=g2o::HyperGraph::Edge *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(202): warning C4251: 'g2o::HyperGraph::Edge::_vertices' : class 'std::vector<g2o::HyperGraph::Vertex *,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph::Edge'
+          with
+          [
+              _Kty=g2o::HyperGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(274): warning C4251: 'g2o::HyperGraph::_vertices' : class 'std::unordered_map<int,g2o::HyperGraph::Vertex *,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph'
+          with
+          [
+              _Kty=int
+  ,            _Ty=g2o::HyperGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(275): warning C4251: 'g2o::HyperGraph::_edges' : class 'std::set<g2o::HyperGraph::Edge *,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph'
+          with
+          [
+              _Kty=g2o::HyperGraph::Edge *
+          ]
+d:\3rdparty\g2o\g2o\core\jacobian_workspace.h(91): warning C4251: 'g2o::JacobianWorkspace::_workspace' : class 'std::vector<g2o::VectorXD,Eigen::aligned_allocator<g2o::VectorXD>>' needs to have dll-interface to be used by clients of class 'g2o::JacobianWorkspace'
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(322): warning C4251: 'g2o::OptimizableGraph::Vertex::_quadraticFormMutex' : class 'g2o::OpenMPMutex' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Vertex'
+          d:\3rdparty\g2o\g2o\core\openmp_mutex.h(63) : see declaration of 'g2o::OpenMPMutex'
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(470): warning C4251: 'g2o::OptimizableGraph::Edge::_cacheIds' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=int
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(490): warning C4251: 'g2o::OptimizableGraph::Edge::_parameterTypes' : class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(491): warning C4251: 'g2o::OptimizableGraph::Edge::_parameters' : class 'std::vector<g2o::Parameter **,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=g2o::Parameter **
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(492): warning C4251: 'g2o::OptimizableGraph::Edge::_parameterIds' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=int
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(655): warning C4251: 'g2o::OptimizableGraph::_renamedTypesLookup' : class 'std::map<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(657): warning C4251: 'g2o::OptimizableGraph::_graphActions' : class 'std::vector<g2o::OptimizableGraph::HyperGraphActionSet,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          with
+          [
+              _Ty=g2o::OptimizableGraph::HyperGraphActionSet
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(662): warning C4251: 'g2o::OptimizableGraph::_parameters' : class 'g2o::ParameterContainer' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          d:\3rdparty\g2o\g2o\core\parameter_container.h(41) : see declaration of 'g2o::ParameterContainer'
+D:\3rdParty\g2o\g2o/stuff/property.h(47): warning C4251: 'g2o::BaseProperty::_name' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'g2o::BaseProperty'
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(103): warning C4251: 'g2o::HyperGraphElementAction::_typeName' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphElementAction'
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(104): warning C4251: 'g2o::HyperGraphElementAction::_name' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphElementAction'
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(129): warning C4251: 'g2o::HyperGraphElementActionCollection::_actionMap' : class 'std::map<std::string,g2o::HyperGraphElementAction *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphElementActionCollection'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=g2o::HyperGraphElementAction *
+          ]
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(155): warning C4251: 'g2o::HyperGraphActionLibrary::_actionMap' : class 'std::map<std::string,g2o::HyperGraphElementAction *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphActionLibrary'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=g2o::HyperGraphElementAction *
+          ]
+d:\3rdparty\g2o\g2o\types\slam3d\se3quat.h(46): warning C4251: 'g2o::SE3Quat::_r' : class 'Eigen::Quaternion<double,0>' needs to have dll-interface to be used by clients of class 'g2o::SE3Quat'
+d:\3rdparty\g2o\g2o\types\slam3d\se3quat.h(47): warning C4251: 'g2o::SE3Quat::_t' : class 'Eigen::Matrix<double,3,1,0,3,1>' needs to have dll-interface to be used by clients of class 'g2o::SE3Quat'
+D:\3rdParty\g2o\g2o/types/slam3d/vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_hessian' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_b' : class 'Eigen::Matrix<double,6,1,0,6,1>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+D:\3rdParty\g2o\g2o/types/slam3d/vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_estimate' : class 'Eigen::Transform<double,3,1,0>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+D:\3rdParty\g2o\g2o/types/slam3d/vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_backup' : class 'std::stack<Eigen::Transform<double,3,1,0>,std::vector<Eigen::Transform<double,3,1,0>,Eigen::aligned_allocator<Eigen::Transform<double,3,1,0>>>>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseEdge<6,E>::_measurement' : class 'Eigen::Transform<double,3,1,0>' needs to have dll-interface to be used by clients of class 'g2o::BaseEdge<6,E>'
+          with
+          [
+              E=g2o::Isometry3D
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseEdge<6,E>::_information' : class 'Eigen::Matrix<double,6,6,0,6,6>' needs to have dll-interface to be used by clients of class 'g2o::BaseEdge<6,E>'
+          with
+          [
+              E=g2o::Isometry3D
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseEdge<6,E>::_error' : class 'Eigen::Matrix<double,6,1,0,6,1>' needs to have dll-interface to be used by clients of class 'g2o::BaseEdge<6,E>'
+          with
+          [
+              E=g2o::Isometry3D
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_hessian' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_hessianTransposed' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_jacobianOplusXi' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_jacobianOplusXj' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(58): warning C4251: 'g2o::EdgeSE3::_inverseMeasurement' : class 'Eigen::Transform<double,3,1,0>' needs to have dll-interface to be used by clients of class 'g2o::EdgeSE3'
+  edge_switchPrior.cpp
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(157): warning C4251: 'g2o::HyperGraph::Vertex::_edges' : class 'std::set<g2o::HyperGraph::Edge *,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph::Vertex'
+          with
+          [
+              _Kty=g2o::HyperGraph::Edge *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(202): warning C4251: 'g2o::HyperGraph::Edge::_vertices' : class 'std::vector<g2o::HyperGraph::Vertex *,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph::Edge'
+          with
+          [
+              _Kty=g2o::HyperGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(274): warning C4251: 'g2o::HyperGraph::_vertices' : class 'std::unordered_map<int,g2o::HyperGraph::Vertex *,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph'
+          with
+          [
+              _Kty=int
+  ,            _Ty=g2o::HyperGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(275): warning C4251: 'g2o::HyperGraph::_edges' : class 'std::set<g2o::HyperGraph::Edge *,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph'
+          with
+          [
+              _Kty=g2o::HyperGraph::Edge *
+          ]
+d:\3rdparty\g2o\g2o\core\jacobian_workspace.h(91): warning C4251: 'g2o::JacobianWorkspace::_workspace' : class 'std::vector<g2o::VectorXD,Eigen::aligned_allocator<g2o::VectorXD>>' needs to have dll-interface to be used by clients of class 'g2o::JacobianWorkspace'
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(322): warning C4251: 'g2o::OptimizableGraph::Vertex::_quadraticFormMutex' : class 'g2o::OpenMPMutex' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Vertex'
+          d:\3rdparty\g2o\g2o\core\openmp_mutex.h(63) : see declaration of 'g2o::OpenMPMutex'
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(470): warning C4251: 'g2o::OptimizableGraph::Edge::_cacheIds' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=int
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(490): warning C4251: 'g2o::OptimizableGraph::Edge::_parameterTypes' : class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(491): warning C4251: 'g2o::OptimizableGraph::Edge::_parameters' : class 'std::vector<g2o::Parameter **,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=g2o::Parameter **
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(492): warning C4251: 'g2o::OptimizableGraph::Edge::_parameterIds' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=int
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(655): warning C4251: 'g2o::OptimizableGraph::_renamedTypesLookup' : class 'std::map<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(657): warning C4251: 'g2o::OptimizableGraph::_graphActions' : class 'std::vector<g2o::OptimizableGraph::HyperGraphActionSet,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          with
+          [
+              _Ty=g2o::OptimizableGraph::HyperGraphActionSet
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(662): warning C4251: 'g2o::OptimizableGraph::_parameters' : class 'g2o::ParameterContainer' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          d:\3rdparty\g2o\g2o\core\parameter_container.h(41) : see declaration of 'g2o::ParameterContainer'
+vertigo3d\edge_switchPrior.cpp(35): warning C4018: '<' : signed/unsigned mismatch
+vertigo3d\edge_switchPrior.cpp(43): warning C4018: '<' : signed/unsigned mismatch
+vertigo3d\edge_switchPrior.cpp(58): warning C4018: '<' : signed/unsigned mismatch
+  types_g2o_robust.cpp
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(157): warning C4251: 'g2o::HyperGraph::Vertex::_edges' : class 'std::set<g2o::HyperGraph::Edge *,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph::Vertex'
+          with
+          [
+              _Kty=g2o::HyperGraph::Edge *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(202): warning C4251: 'g2o::HyperGraph::Edge::_vertices' : class 'std::vector<g2o::HyperGraph::Vertex *,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph::Edge'
+          with
+          [
+              _Kty=g2o::HyperGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(274): warning C4251: 'g2o::HyperGraph::_vertices' : class 'std::unordered_map<int,g2o::HyperGraph::Vertex *,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph'
+          with
+          [
+              _Kty=int
+  ,            _Ty=g2o::HyperGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(275): warning C4251: 'g2o::HyperGraph::_edges' : class 'std::set<g2o::HyperGraph::Edge *,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph'
+          with
+          [
+              _Kty=g2o::HyperGraph::Edge *
+          ]
+D:\3rdParty\g2o\g2o/core/factory.h(123): warning C4251: 'g2o::Factory::_creator' : class 'std::map<std::string,g2o::Factory::CreatorInformation *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::Factory'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=g2o::Factory::CreatorInformation *
+          ]
+D:\3rdParty\g2o\g2o/core/factory.h(124): warning C4251: 'g2o::Factory::_tagLookup' : class 'std::map<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::Factory'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\jacobian_workspace.h(91): warning C4251: 'g2o::JacobianWorkspace::_workspace' : class 'std::vector<g2o::VectorXD,Eigen::aligned_allocator<g2o::VectorXD>>' needs to have dll-interface to be used by clients of class 'g2o::JacobianWorkspace'
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(322): warning C4251: 'g2o::OptimizableGraph::Vertex::_quadraticFormMutex' : class 'g2o::OpenMPMutex' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Vertex'
+          d:\3rdparty\g2o\g2o\core\openmp_mutex.h(63) : see declaration of 'g2o::OpenMPMutex'
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(470): warning C4251: 'g2o::OptimizableGraph::Edge::_cacheIds' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=int
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(490): warning C4251: 'g2o::OptimizableGraph::Edge::_parameterTypes' : class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(491): warning C4251: 'g2o::OptimizableGraph::Edge::_parameters' : class 'std::vector<g2o::Parameter **,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=g2o::Parameter **
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(492): warning C4251: 'g2o::OptimizableGraph::Edge::_parameterIds' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=int
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(655): warning C4251: 'g2o::OptimizableGraph::_renamedTypesLookup' : class 'std::map<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(657): warning C4251: 'g2o::OptimizableGraph::_graphActions' : class 'std::vector<g2o::OptimizableGraph::HyperGraphActionSet,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          with
+          [
+              _Ty=g2o::OptimizableGraph::HyperGraphActionSet
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(662): warning C4251: 'g2o::OptimizableGraph::_parameters' : class 'g2o::ParameterContainer' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          d:\3rdparty\g2o\g2o\core\parameter_container.h(41) : see declaration of 'g2o::ParameterContainer'
+D:\3rdParty\g2o\g2o/stuff/property.h(47): warning C4251: 'g2o::BaseProperty::_name' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'g2o::BaseProperty'
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(103): warning C4251: 'g2o::HyperGraphElementAction::_typeName' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphElementAction'
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(104): warning C4251: 'g2o::HyperGraphElementAction::_name' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphElementAction'
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(129): warning C4251: 'g2o::HyperGraphElementActionCollection::_actionMap' : class 'std::map<std::string,g2o::HyperGraphElementAction *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphElementActionCollection'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=g2o::HyperGraphElementAction *
+          ]
+D:\3rdParty\g2o\g2o/core/hyper_graph_action.h(155): warning C4251: 'g2o::HyperGraphActionLibrary::_actionMap' : class 'std::map<std::string,g2o::HyperGraphElementAction *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraphActionLibrary'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=g2o::HyperGraphElementAction *
+          ]
+d:\3rdparty\g2o\g2o\types\slam3d\se3quat.h(46): warning C4251: 'g2o::SE3Quat::_r' : class 'Eigen::Quaternion<double,0>' needs to have dll-interface to be used by clients of class 'g2o::SE3Quat'
+d:\3rdparty\g2o\g2o\types\slam3d\se3quat.h(47): warning C4251: 'g2o::SE3Quat::_t' : class 'Eigen::Matrix<double,3,1,0,3,1>' needs to have dll-interface to be used by clients of class 'g2o::SE3Quat'
+D:\3rdParty\g2o\g2o/types/slam3d/vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_hessian' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_b' : class 'Eigen::Matrix<double,6,1,0,6,1>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+D:\3rdParty\g2o\g2o/types/slam3d/vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_estimate' : class 'Eigen::Transform<double,3,1,0>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+D:\3rdParty\g2o\g2o/types/slam3d/vertex_se3.h(51): warning C4251: 'g2o::BaseVertex<6,g2o::Isometry3D>::_backup' : class 'std::stack<Eigen::Transform<double,3,1,0>,std::vector<Eigen::Transform<double,3,1,0>,Eigen::aligned_allocator<Eigen::Transform<double,3,1,0>>>>' needs to have dll-interface to be used by clients of class 'g2o::BaseVertex<6,g2o::Isometry3D>'
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseEdge<6,E>::_measurement' : class 'Eigen::Transform<double,3,1,0>' needs to have dll-interface to be used by clients of class 'g2o::BaseEdge<6,E>'
+          with
+          [
+              E=g2o::Isometry3D
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseEdge<6,E>::_information' : class 'Eigen::Matrix<double,6,6,0,6,6>' needs to have dll-interface to be used by clients of class 'g2o::BaseEdge<6,E>'
+          with
+          [
+              E=g2o::Isometry3D
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseEdge<6,E>::_error' : class 'Eigen::Matrix<double,6,1,0,6,1>' needs to have dll-interface to be used by clients of class 'g2o::BaseEdge<6,E>'
+          with
+          [
+              E=g2o::Isometry3D
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_hessian' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_hessianTransposed' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_jacobianOplusXi' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(18): warning C4251: 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>::_jacobianOplusXj' : class 'Eigen::Map<Derived,1,Eigen::Stride<0,0>>' needs to have dll-interface to be used by clients of class 'g2o::BaseBinaryEdge<6,g2o::Isometry3D,g2o::VertexSE3,g2o::VertexSE3>'
+          with
+          [
+              Derived=Eigen::Matrix<double,6,6,0,6,6>
+          ]
+D:\3rdParty\g2o\g2o/types/slam3d/edge_se3.h(58): warning C4251: 'g2o::EdgeSE3::_inverseMeasurement' : class 'Eigen::Transform<double,3,1,0>' needs to have dll-interface to be used by clients of class 'g2o::EdgeSE3'
+  vertex_switchLinear.cpp
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(157): warning C4251: 'g2o::HyperGraph::Vertex::_edges' : class 'std::set<g2o::HyperGraph::Edge *,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph::Vertex'
+          with
+          [
+              _Kty=g2o::HyperGraph::Edge *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(202): warning C4251: 'g2o::HyperGraph::Edge::_vertices' : class 'std::vector<g2o::HyperGraph::Vertex *,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph::Edge'
+          with
+          [
+              _Kty=g2o::HyperGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(274): warning C4251: 'g2o::HyperGraph::_vertices' : class 'std::unordered_map<int,g2o::HyperGraph::Vertex *,std::hash<int>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph'
+          with
+          [
+              _Kty=int
+  ,            _Ty=g2o::HyperGraph::Vertex *
+          ]
+d:\3rdparty\g2o\g2o\core\hyper_graph.h(275): warning C4251: 'g2o::HyperGraph::_edges' : class 'std::set<g2o::HyperGraph::Edge *,std::less<_Kty>,std::allocator<_Kty>>' needs to have dll-interface to be used by clients of class 'g2o::HyperGraph'
+          with
+          [
+              _Kty=g2o::HyperGraph::Edge *
+          ]
+d:\3rdparty\g2o\g2o\core\jacobian_workspace.h(91): warning C4251: 'g2o::JacobianWorkspace::_workspace' : class 'std::vector<g2o::VectorXD,Eigen::aligned_allocator<g2o::VectorXD>>' needs to have dll-interface to be used by clients of class 'g2o::JacobianWorkspace'
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(322): warning C4251: 'g2o::OptimizableGraph::Vertex::_quadraticFormMutex' : class 'g2o::OpenMPMutex' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Vertex'
+          d:\3rdparty\g2o\g2o\core\openmp_mutex.h(63) : see declaration of 'g2o::OpenMPMutex'
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(470): warning C4251: 'g2o::OptimizableGraph::Edge::_cacheIds' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=int
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(490): warning C4251: 'g2o::OptimizableGraph::Edge::_parameterTypes' : class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(491): warning C4251: 'g2o::OptimizableGraph::Edge::_parameters' : class 'std::vector<g2o::Parameter **,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=g2o::Parameter **
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(492): warning C4251: 'g2o::OptimizableGraph::Edge::_parameterIds' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'g2o::OptimizableGraph::Edge'
+          with
+          [
+              _Ty=int
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(655): warning C4251: 'g2o::OptimizableGraph::_renamedTypesLookup' : class 'std::map<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          with
+          [
+              _Kty=std::string
+  ,            _Ty=std::string
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(657): warning C4251: 'g2o::OptimizableGraph::_graphActions' : class 'std::vector<g2o::OptimizableGraph::HyperGraphActionSet,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          with
+          [
+              _Ty=g2o::OptimizableGraph::HyperGraphActionSet
+          ]
+d:\3rdparty\g2o\g2o\core\optimizable_graph.h(662): warning C4251: 'g2o::OptimizableGraph::_parameters' : class 'g2o::ParameterContainer' needs to have dll-interface to be used by clients of struct 'g2o::OptimizableGraph'
+          d:\3rdparty\g2o\g2o\core\parameter_container.h(41) : see declaration of 'g2o::ParameterContainer'
+     Creating library C:\Users\range\Desktop\sparse3d_github\Sparse3d\Release\GlobalOptimizer2.5.lib and object C:\Users\range\Desktop\sparse3d_github\Sparse3d\Release\GlobalOptimizer2.5.exp
+  Generating code
+  Finished generating code
+  GlobalOptimizer2.5.vcxproj -> C:\Users\range\Desktop\sparse3d_github\Sparse3d\Release\GlobalOptimizer2.5.exe

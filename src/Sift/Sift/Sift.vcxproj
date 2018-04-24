@@ -76,6 +76,9 @@
   <ItemGroup>
     <ClCompile Include="SIFT.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Verbose.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

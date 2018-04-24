@@ -18,6 +18,9 @@
     <ClInclude Include="NARF.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Verbose.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

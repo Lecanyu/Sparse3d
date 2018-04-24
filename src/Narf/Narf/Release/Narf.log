@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\PCL 1.8.0\include\pcl-1.8\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+  Generating code
+  Finished generating code
+  Narf.vcxproj -> C:\Users\range\Desktop\sparse3d_github\Sparse3d\Release\Narf.exe

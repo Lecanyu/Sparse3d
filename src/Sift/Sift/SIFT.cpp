@@ -10,7 +10,7 @@
 #include <iostream>  
 #include <fstream>
 #include <set>
-
+#include "Verbose.h"
 using namespace cv;
 using namespace std;
 
@@ -57,8 +57,10 @@ int main(int argc, char** argv)
 		Mat description1;
 		descript.compute(image1, img_keypoints[i], description1);
 		img_descriptors[i] = description1;
-
+#ifdef Verbose
 		cout << "image" << i << " find " << img_keypoints[i].size() << " keypoints\n";
+#endif
+		
 	}
 
 	// correspondence
@@ -119,7 +121,10 @@ int main(int argc, char** argv)
 			}
 
 			good_matches.push_back(mat);
+#ifdef Verbose
 			cout << "total match number:" << mat.cor_pixel.size() << "\n\n";
+#endif
+			
 		}
 
 		#pragma omp critical

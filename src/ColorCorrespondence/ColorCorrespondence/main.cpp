@@ -14,6 +14,7 @@
 
 #include <boost/filesystem.hpp>
 
+#include "Verbose.h"
 #include "SubsidiaryFunction.h"
 #include "GraphMatching.h"
 #include "BuildCorpPointSet.h"
@@ -91,8 +92,9 @@ int main(int argc, char** argv)
 		int img1 = cor_pixel.data_[i].imageid1_;
 		int img2 = cor_pixel.data_[i].imageid2_;
 
+#ifdef Verbose
 		std::cout << "Begin registration correspondence between (" << img1 << ", " << img2 << ")\n";
-
+#endif
 		cv::Mat& depth_image1 = depth_img[img1];
 		cv::Mat& depth_image2 = depth_img[img2];
 
@@ -125,14 +127,20 @@ int main(int argc, char** argv)
 			continue;
 
 		//Graph matching
+#ifdef Verbose
 		std::cout << "Graph matching...";
+#endif
 		GraphMatching gm(*pointcloud_keypoints1, *pointcloud_keypoints2, *corps);
 		pcl::CorrespondencesPtr	graph_corps = gm.ComputeCorrespondenceByEigenVec();
+#ifdef Verbose
 		std::cout << "Done!\n";
+#endif
 
 		if (graph_corps->size() < 4)
 		{
+#ifdef Verbose
 			std::cout << "cannot find enough correspondence\n";
+#endif
 			continue;
 		}
 
@@ -150,15 +158,17 @@ int main(int argc, char** argv)
 
 		if (K_set < buidCorp._total_size / 3 || K_set == 0 || buidCorp._total_size == 0)
 		{
+#ifdef Verbose
 			std::cout << "Align fail!\n\n\n";
+#endif
 			continue;
 		}
 
 		Eigen::Matrix< double, 6, 6 > info_mat = buidCorp.ComputeInfoMatrix(buidCorp._correspondences, scene1_ds, scene2_ds);
-
+#ifdef Verbose
 		std::cout << K_set << " point pair are found as correspondence in point cloud. " << std::endl;
 		std::cout << "Align successfully!\n\n";
-
+#endif
 		double score = (double)K_set / (double)buidCorp._total_size;
 
 		InformationMatrix im = info_mat;
@@ -171,13 +181,8 @@ int main(int argc, char** argv)
 	}
 
 	//save
-	std::cout << "Save trajectory file...";
 	traj.SaveToSPFile(traj_file);
-	std::cout << "Done!\n";
-
-	std::cout << "Save information file...";
 	info.SaveToSPFile(info_file);
-	std::cout << "Done!\n";
 
 	return 0;
 }

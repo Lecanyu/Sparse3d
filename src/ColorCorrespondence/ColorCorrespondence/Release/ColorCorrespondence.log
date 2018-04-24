@@ -1,0 +1,322 @@
+﻿  main.cpp
+D:\PCL 1.8.0\include\pcl-1.8\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+D:\PCL 1.8.0\include\pcl-1.8\pcl/visualization/interactor_style.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+D:\PCL 1.8.0\include\pcl-1.8\pcl/visualization/pcl_visualizer.h(1618): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(342): warning C4291: 'void *operator new(size_t,flann::PooledAllocator &)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(332) : while compiling class template member function 'void flann::KMeansIndex<flann::DummyDistance>::buildIndexImpl(void)'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(89) : see reference to class template instantiation 'flann::KMeansIndex<flann::DummyDistance>' being compiled
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(119) : see reference to class template instantiation 'flann::needs_kdtree_distance<flann::KMeansIndex<flann::DummyDistance>>' being compiled
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(171) : see reference to class template instantiation 'flann::valid_combination<flann::KMeansIndex,Distance,ElementType>' being compiled
+          with
+          [
+              Distance=flann::L2_Simple<float>
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/flann.hpp(113) : see reference to function template instantiation 'flann::NNIndex<Distance> *flann::create_index_by_type<Distance>(const flann::flann_algorithm_t,const flann::Matrix<float> &,const flann::IndexParams &,const Distance &)' being compiled
+          with
+          [
+              Distance=flann::L2_Simple<float>
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/flann.hpp(101) : while compiling class template member function 'flann::Index<Dist>::Index(const flann::Matrix<float> &,const flann::IndexParams &,Distance)'
+          with
+          [
+              Dist=flann::L2_Simple<float>
+  ,            Distance=flann::L2_Simple<float>
+          ]
+          D:\PCL 1.8.0\include\pcl-1.8\pcl/kdtree/impl/kdtree_flann.hpp(126) : see reference to function template instantiation 'flann::Index<Dist>::Index(const flann::Matrix<float> &,const flann::IndexParams &,Distance)' being compiled
+          with
+          [
+              Dist=flann::L2_Simple<float>
+  ,            Distance=flann::L2_Simple<float>
+          ]
+          D:\PCL 1.8.0\include\pcl-1.8\pcl/kdtree/impl/kdtree_flann.hpp(150) : see reference to class template instantiation 'flann::Index<Dist>' being compiled
+          with
+          [
+              Dist=flann::L2_Simple<float>
+          ]
+          D:\PCL 1.8.0\include\pcl-1.8\pcl/kdtree/impl/kdtree_flann.hpp(135) : while compiling class template member function 'int pcl::KdTreeFLANN<pcl::PointXYZRGB,flann::L2_Simple<float>>::nearestKSearch(const PointT &,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &) const'
+          with
+          [
+              PointT=pcl::PointXYZRGB
+  ,            _Ty=int
+          ]
+          c:\users\range\desktop\sparse3d_github\sparse3d\src\colorcorrespondence\colorcorrespondence\BuildCorpPointSet.h(60) : see reference to function template instantiation 'int pcl::KdTreeFLANN<pcl::PointXYZRGB,flann::L2_Simple<float>>::nearestKSearch(const PointT &,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &) const' being compiled
+          with
+          [
+              PointT=pcl::PointXYZRGB
+  ,            _Ty=int
+          ]
+          c:\users\range\desktop\sparse3d_github\sparse3d\src\colorcorrespondence\colorcorrespondence\BuildCorpPointSet.h(39) : see reference to class template instantiation 'pcl::KdTreeFLANN<pcl::PointXYZRGB,flann::L2_Simple<float>>' being compiled
+D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(308): warning C4291: 'void *operator new(size_t,flann::PooledAllocator &)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(298) : while compiling class template member function 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::buildIndexImpl(void)'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(89) : see reference to class template instantiation 'flann::HierarchicalClusteringIndex<flann::DummyDistance>' being compiled
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(119) : see reference to class template instantiation 'flann::needs_kdtree_distance<flann::HierarchicalClusteringIndex<flann::DummyDistance>>' being compiled
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(180) : see reference to class template instantiation 'flann::valid_combination<flann::HierarchicalClusteringIndex,Distance,ElementType>' being compiled
+          with
+          [
+              Distance=flann::L2_Simple<float>
+          ]
+D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(702): warning C4291: 'void *operator new(size_t,flann::PooledAllocator &)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(543) : while compiling class template member function 'void flann::KMeansIndex<flann::DummyDistance>::computeClustering(flann::KMeansIndex<flann::DummyDistance>::Node *,int *,int,int)'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(344) : see reference to function template instantiation 'void flann::KMeansIndex<flann::DummyDistance>::computeClustering(flann::KMeansIndex<flann::DummyDistance>::Node *,int *,int,int)' being compiled
+D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(516): warning C4291: 'void *operator new(size_t,flann::PooledAllocator &)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(472) : while compiling class template member function 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::computeClustering(flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *,int *,int)'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(309) : see reference to function template instantiation 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::computeClustering(flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *,int *,int)' being compiled
+D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(469): warning C4291: 'void *operator new(size_t,flann::PooledAllocator &)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(468) : while compiling class template member function 'void flann::KMeansIndex<flann::DummyDistance>::copyTree(flann::KMeansIndex<flann::DummyDistance>::Node *&,flann::KMeansIndex<flann::DummyDistance>::Node *const &)'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(157) : see reference to function template instantiation 'void flann::KMeansIndex<flann::DummyDistance>::copyTree(flann::KMeansIndex<flann::DummyDistance>::Node *&,flann::KMeansIndex<flann::DummyDistance>::Node *const &)' being compiled
+D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(426): warning C4291: 'void *operator new(size_t,flann::PooledAllocator &)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(425) : while compiling class template member function 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::copyTree(flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *&,flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *const &)'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(146) : see reference to function template instantiation 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::copyTree(flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *&,flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *const &)' being compiled
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(249): warning C4291: 'void *operator new(size_t,flann::PooledAllocator &)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::KMeansIndex<flann::DummyDistance>::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::KMeansIndex<flann::DummyDistance>::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(26) : see reference to function template instantiation 'void flann::serialization::access::serialize<Archive,T>(Archive &,T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::KMeansIndex<flann::DummyDistance>
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(40) : see reference to function template instantiation 'void flann::serialization::serialize<OutputArchive,T>(Archive &,T &)' being compiled
+          with
+          [
+              OutputArchive=flann::serialization::SaveArchive
+  ,            T=flann::KMeansIndex<flann::DummyDistance>
+  ,            Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(297) : see reference to function template instantiation 'void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)' being compiled
+          with
+          [
+              T=flann::KMeansIndex<flann::DummyDistance>
+  ,            Archive=flann::serialization::SaveArchive
+  ,            OutputArchive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(297) : see reference to function template instantiation 'void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)' being compiled
+          with
+          [
+              T=flann::KMeansIndex<flann::DummyDistance>
+  ,            Archive=flann::serialization::SaveArchive
+  ,            OutputArchive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(265) : see reference to function template instantiation 'Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::KMeansIndex<flann::DummyDistance>>(const T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::KMeansIndex<flann::DummyDistance>
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(265) : see reference to function template instantiation 'Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::KMeansIndex<flann::DummyDistance>>(const T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::KMeansIndex<flann::DummyDistance>
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(263) : while compiling class template member function 'void flann::KMeansIndex<flann::DummyDistance>::saveIndex(FILE *)'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(244): warning C4291: 'void *operator new(size_t,flann::PooledAllocator &)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(26) : see reference to function template instantiation 'void flann::serialization::access::serialize<Archive,T>(Archive &,T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(40) : see reference to function template instantiation 'void flann::serialization::serialize<OutputArchive,T>(Archive &,T &)' being compiled
+          with
+          [
+              OutputArchive=flann::serialization::SaveArchive
+  ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+  ,            Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(297) : see reference to function template instantiation 'void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)' being compiled
+          with
+          [
+              T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+  ,            Archive=flann::serialization::SaveArchive
+  ,            OutputArchive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(297) : see reference to function template instantiation 'void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)' being compiled
+          with
+          [
+              T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+  ,            Archive=flann::serialization::SaveArchive
+  ,            OutputArchive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(261) : see reference to function template instantiation 'Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::HierarchicalClusteringIndex<flann::DummyDistance>>(const T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(261) : see reference to function template instantiation 'Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::HierarchicalClusteringIndex<flann::DummyDistance>>(const T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(259) : while compiling class template member function 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::saveIndex(FILE *)'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(441): warning C4291: 'void *operator new(size_t,flann::PooledAllocator &)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::KMeansIndex<flann::DummyDistance>::Node::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::KMeansIndex<flann::DummyDistance>::Node::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(26) : see reference to function template instantiation 'void flann::serialization::access::serialize<Archive,T>(Archive &,T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::KMeansIndex<flann::DummyDistance>::Node
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(40) : see reference to function template instantiation 'void flann::serialization::serialize<OutputArchive,T>(Archive &,T &)' being compiled
+          with
+          [
+              OutputArchive=flann::serialization::SaveArchive
+  ,            T=flann::KMeansIndex<flann::DummyDistance>::Node
+  ,            Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(297) : see reference to function template instantiation 'void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)' being compiled
+          with
+          [
+              T=flann::KMeansIndex<flann::DummyDistance>::Node
+  ,            Archive=flann::serialization::SaveArchive
+  ,            OutputArchive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(297) : see reference to function template instantiation 'void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)' being compiled
+          with
+          [
+              T=flann::KMeansIndex<flann::DummyDistance>::Node
+  ,            Archive=flann::serialization::SaveArchive
+  ,            OutputArchive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(251) : see reference to function template instantiation 'Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::KMeansIndex<flann::DummyDistance>::Node>(const T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::KMeansIndex<flann::DummyDistance>::Node
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(251) : see reference to function template instantiation 'Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::KMeansIndex<flann::DummyDistance>::Node>(const T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::KMeansIndex<flann::DummyDistance>::Node
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::KMeansIndex<flann::DummyDistance>::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::KMeansIndex<flann::DummyDistance>::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(394): warning C4291: 'void *operator new(size_t,flann::PooledAllocator &)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(26) : see reference to function template instantiation 'void flann::serialization::access::serialize<Archive,T>(Archive &,T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(40) : see reference to function template instantiation 'void flann::serialization::serialize<OutputArchive,T>(Archive &,T &)' being compiled
+          with
+          [
+              OutputArchive=flann::serialization::SaveArchive
+  ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+  ,            Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(297) : see reference to function template instantiation 'void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)' being compiled
+          with
+          [
+              T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+  ,            Archive=flann::serialization::SaveArchive
+  ,            OutputArchive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(297) : see reference to function template instantiation 'void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)' being compiled
+          with
+          [
+              T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+  ,            Archive=flann::serialization::SaveArchive
+  ,            OutputArchive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(246) : see reference to function template instantiation 'Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node>(const T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(246) : see reference to function template instantiation 'Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node>(const T &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+  ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/serialization.h(18) : see reference to function template instantiation 'void flann::HierarchicalClusteringIndex<flann::DummyDistance>::serialize<Archive>(Archive &)' being compiled
+          with
+          [
+              Archive=flann::serialization::SaveArchive
+          ]
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+          D:\PCL 1.8.0\3rdParty\FLANN\include\flann/util/allocator.h(197) : see declaration of 'operator new'
+  Generating code
+  Finished generating code
+  ColorCorrespondence.vcxproj -> C:\Users\range\Desktop\sparse3d_github\Sparse3d\Release\ColorCorrespondence.exe

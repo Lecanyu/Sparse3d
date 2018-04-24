@@ -8,6 +8,7 @@
 
 #include <boost/filesystem.hpp>
 #include "NARF.h"
+#include "Verbose.h"
 
 int main(int argc, char** argv)
 {
@@ -65,7 +66,9 @@ int main(int argc, char** argv)
 		}
 
 		// keypoint
+#ifdef Verbose
 		std::cout << "Detect pointcloud" << i << " keypoint\n";
+#endif
 		NARF narf(scene_xyz);
 		narf.narf_keypoints_extraction();
 
@@ -78,7 +81,9 @@ int main(int argc, char** argv)
 		pointcloud_keypoints->height = 1;
 
 		// descriptor
+#ifdef Verbose
 		std::cout << "Detect pointcloud" << i << " descriptor\n";
+#endif
 		pcl::PointCloud<pcl::FPFHSignature33>::Ptr descriptor(new pcl::PointCloud<pcl::FPFHSignature33>());
 
 		pcl::FPFHEstimationOMP<pcl::PointXYZ, pcl::Normal, pcl::FPFHSignature33> fpfh;
