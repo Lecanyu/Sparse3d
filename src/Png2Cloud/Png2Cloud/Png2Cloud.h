@@ -18,6 +18,8 @@
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/features/normal_3d_omp.h>
 
+#include "Verbose.h"
+
 struct CameraParam {
 public:
 	double fx_, fy_, cx_, cy_;
@@ -99,14 +101,16 @@ public:
 
 		depth_img = cv::imread(filepath_depth, CV_LOAD_IMAGE_ANYCOLOR | CV_LOAD_IMAGE_ANYDEPTH);
 		depth_img.convertTo(depth_img, CV_16U);
+#ifdef Verbose
 		std::cout << "depth image resolution: " << depth_img.cols << "*" << depth_img.rows << std::endl;
-
+#endif // Verbose
 		assert(_camera.img_width_ == depth_img.cols && _camera.img_height_ == depth_img.rows);
 
 		color_img = cv::imread(filepath_color, CV_LOAD_IMAGE_ANYCOLOR | CV_LOAD_IMAGE_ANYDEPTH);
 		color_img.convertTo(color_img, CV_8UC3);
+#ifdef Verbose
 		std::cout << "color image resolution: " << color_img.cols << "*" << color_img.rows << std::endl;
-
+#endif
 		return true;
 	}
 

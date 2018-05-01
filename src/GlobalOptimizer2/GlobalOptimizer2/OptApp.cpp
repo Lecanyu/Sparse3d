@@ -12,6 +12,7 @@
 #include "vertigo3d/vertex_switchLinear.h"
 #include "vertigo3d/edge_switchPrior.h"
 #include "vertigo3d/edge_se3Switchable.h"
+#include "Verbose.h"
 
 bool COptApp::Init()
 {
@@ -58,7 +59,11 @@ void COptApp::OptimizeSwitchable()
 
 	g2o::SparseOptimizer* optimizer;
 	optimizer = new g2o::SparseOptimizer();
+#ifdef Verbose
 	optimizer->setVerbose(true);
+#else
+	optimizer->setVerbose(false);
+#endif // Verbose
 	g2o::BlockSolverX::LinearSolverType * linearSolver = new g2o::LinearSolverCSparse<g2o::BlockSolverX::PoseMatrixType>();
 	g2o::BlockSolverX* solver = new g2o::BlockSolverX(linearSolver);
 	g2o::OptimizationAlgorithmLevenberg* algo = new g2o::OptimizationAlgorithmLevenberg(solver);
@@ -140,7 +145,11 @@ void COptApp::OptimizeSlam3d()
 {
 	g2o::SparseOptimizer* optimizer;
 	optimizer = new g2o::SparseOptimizer();
+#ifdef Verbose
 	optimizer->setVerbose(true);
+#else
+	optimizer->setVerbose(false);
+#endif // Verbose
 	g2o::BlockSolverX::LinearSolverType * linearSolver = new g2o::LinearSolverCSparse<g2o::BlockSolverX::PoseMatrixType>();
 	g2o::BlockSolverX* solver = new g2o::BlockSolverX(linearSolver);
 	g2o::OptimizationAlgorithmLevenberg* algo = new g2o::OptimizationAlgorithmLevenberg(solver);
@@ -182,7 +191,9 @@ void COptApp::OptimizeSlam3d()
 		optimizer->addEdge(g2o_edge);
 	}
 	std::sort(init_error_arr.begin(), init_error_arr.end(), std::less<double>());
-	std::cout << "min: " <<init_error_arr[0] << "max: " << init_error_arr[init_error_arr.size() - 1] << "\n";
+#ifdef Verbose
+	std::cout << "min: " << init_error_arr[0] << "max: " << init_error_arr[init_error_arr.size() - 1] << "\n";
+#endif // Verbose
 
 	optimizer->initializeOptimization();
 	optimizer->optimize(max_iteration_);

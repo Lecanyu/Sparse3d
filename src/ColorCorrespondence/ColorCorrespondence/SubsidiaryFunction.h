@@ -109,7 +109,7 @@ struct CorrespondencePixel
 			std::string line;
 			std::getline(input, line);
 			if (line.empty()) continue;
-			std::stringstream ss(line);     //×Ö·û´®×ª×Ö·ûÁ÷
+			std::stringstream ss(line);   
 			std::string keyword;
 			ss >> keyword;
 			if (keyword == "#")

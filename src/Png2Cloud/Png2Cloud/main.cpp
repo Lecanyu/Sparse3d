@@ -17,7 +17,6 @@
 #include "Png2Cloud.h"
 
 
-
 int main(int argc, char**argv)
 {
 	if (argc != 8)
@@ -59,7 +58,9 @@ int main(int argc, char**argv)
 
 	for (int i = 0; i < num_of_color;++i)
 	{
+#ifdef Verbose
 		std::cout << "load png " << i << "\n";
+#endif // Verbose
 		// load
 		cv::Mat color;
 		cv::Mat depth;
