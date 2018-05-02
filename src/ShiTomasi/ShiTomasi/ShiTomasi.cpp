@@ -11,6 +11,7 @@
 #include <iostream>  
 #include <fstream>
 #include <set>
+#include "Verbose.h"
 
 using namespace std;
 using namespace cv;
@@ -58,8 +59,9 @@ int main(int argc, char** argv)
 		Mat description1;
 		descript.compute(image1, img_keypoints[i], description1);
 		img_descriptors[i] = description1;
-
+#ifdef Verbose
 		cout << "image" << i << " find " << img_keypoints[i].size() << " keypoints\n";
+#endif
 	}
 
 	// correspondence
@@ -111,9 +113,9 @@ int main(int argc, char** argv)
 
 					int x2 = cvRound(keypoints2[m_indices.at<int>(t, 0)].pt.x);
 					int y2 = cvRound(keypoints2[m_indices.at<int>(t, 0)].pt.y);
-
+#ifdef Verbose
 					cout << "find a match (" << x1 << "," << y1 << ")----(" << x2 << "," << y2 << ")\n";
-
+#endif
 					trip tri;
 					tri.pixel1_x = x1;	tri.pixel1_y = y1;
 					tri.pixel2_x = x2;	tri.pixel2_y = y2;

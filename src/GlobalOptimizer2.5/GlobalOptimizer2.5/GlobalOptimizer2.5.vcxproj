@@ -83,6 +83,7 @@
   <ItemGroup>
     <ClInclude Include="helper.h" />
     <ClInclude Include="OptApp.h" />
+    <ClInclude Include="Verbose.h" />
     <ClInclude Include="vertigo3d\edge_se3Switchable.h" />
     <ClInclude Include="vertigo3d\edge_switchPrior.h" />
     <ClInclude Include="vertigo3d\vertex_switchLinear.h" />

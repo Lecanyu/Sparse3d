@@ -1,4 +1,5 @@
 #include "ProgressiveOpt.h"
+#include "Verbose.h"
 
 #include <boost/filesystem.hpp>
 #include <g2o/types/slam3d/edge_se3.h>
@@ -181,9 +182,10 @@ std::vector<int> ProgressiveOpt::BeamSearch(const double err_threshold, const in
 		if (loop[i].frame1 == frame_num_ - 1 || loop[i].frame2 == frame_num_ - 1)
 			end_flag++;
 	Bnum++;
-
+#ifdef Verbose
 	std::cout << "-----------------Loop" << Bnum << "----------------\n";
-
+#endif
+	
 	int unfix_edge = 0;
 
 	std::vector<inx2seq> fix_part;
@@ -258,213 +260,21 @@ std::vector<int> ProgressiveOpt::BeamSearch(const double err_threshold, const in
 			}
 		}
 		select_loop.push_back(loop);
+#ifdef Verbose
 		std::cout << "Successful!\n";
 		std::cout << "loop Error: " << min_error << ";  Threshold:" << err_threshold << "\n";
+#endif
 		return best_l;
 	}
 	else
 	{
+#ifdef Verbose
 		std::cout << "Fail!\n";
 		std::cout << "loop Error: " << min_error << ";  Threshold:" << err_threshold << "\n";
+#endif
 		return seq;
 	}
 }
-
-
-
-
-//double ProgressiveOpt::LoopError(const std::vector<int>& l, std::map<key, std::vector<int>, key_comp>& index_map, const std::vector<key>& loop)
-//{
-//	std::vector<int> inx;
-//	for (int i = 0; i < loop.size(); ++i)
-//	{
-//		std::vector<int>& vec = index_map[loop[i]];
-//		inx.insert(inx.end(), vec.begin(), vec.end());
-//	}
-//	std::sort(inx.begin(), inx.end(), std::less<int>());
-//
-//
-//	RGBDTrajectory t_arr;
-//	RGBDInformation i_arr;
-//	Eigen::Matrix4d err = Eigen::Matrix4d::Identity();
-//	Eigen::Matrix4d final_mat = Eigen::Matrix4d::Identity();
-//	for (int i = 0; i < inx.size(); i++) {
-//		int index = inx[i];
-//		if (l[index] < 1)
-//			continue;
-//		FramedTransformation & t = traj_.data_[index];
-//		t_arr.data_.push_back(t);
-//
-//		FramedInformation & inf = info_.data_[index];
-//		i_arr.data_.push_back(inf);
-//	}
-//
-//	assert(t_arr.data_[0].frame1_ == t_arr.data_[1].frame1_);
-//
-//	bool all_geom = true;
-//	for (int i = 0; i < t_arr.data_.size(); ++i)
-//	{
-//		if (i == 1)
-//		{
-//			if (i_arr.data_[i].flag != 0)
-//				all_geom = false;
-//			final_mat = t_arr.data_[i].transformation_;
-//		}
-//		else
-//		{
-//			if (i_arr.data_[i].flag != 0)
-//				all_geom = false;
-//			err = err*t_arr.data_[i].transformation_;
-//		}
-//	}
-//	
-//	err = err*final_mat.inverse();
-//	Eigen::Isometry3d delta(err);
-//	auto error = g2o::internal::toVectorMQT(delta);
-//	double translation_err = error(0)*error(0) + error(1)*error(1) + error(2)*error(2);
-//	double rotation_err = 4 * (error(3)*error(3) + error(4)*error(4) + error(5)*error(5));
-//	//double e = sqrt(translation_err) + sqrt(rotation_err);
-//	double e = translation_err + rotation_err;
-//	if (all_geom)
-//		e += 0.0005;
-//	
-//	if (Bnum == 222)
-//	{
-//		std::cout << "error: " << e << "\n";
-//		for (int i = 0; i < inx.size(); ++i)
-//		{
-//			std::cout << "index: " << inx[i] << ", seq: " << l[inx[i]] << "\n";
-//		}
-//		std::cout << "\n\n";
-//	}
-//	return e;
-//}
-//
-//std::vector<int> ProgressiveOpt::BeamSearch(const double err_threshold, const int beam_width, std::map<key, std::vector<int>, key_comp>& index_map, const std::vector<key>& loop, const std::vector<int>& seq)
-//{
-//	for (int i = 0; i < loop.size();++i)
-//		if (loop[i].frame1 == frame_num_-1 ||loop[i].frame2 == frame_num_-1)
-//			end_flag++;
-//	Bnum++;
-//
-//	std::cout << "-----------------Loop" << Bnum << "----------------\n";
-//	int all_seq_len = 1;
-//	// init one loop edge
-//	for (int i = 0; i < loop.size(); ++i)
-//	{
-//		std::vector<int>& vec = index_map[loop[i]];
-//		if (seq[vec[0]] == -1)		// not fix
-//			all_seq_len *= vec.size();
-//		else
-//			for (int j = 0; j < vec.size(); ++j)
-//				if (seq[vec[j]] == 1)
-//					break;
-//	}
-//
-//	// init all select situation
-//	int s_len = 1;
-//	std::vector<std::vector<int>> all_seq;
-//
-//	struct ss{
-//		std::vector<int> selected_l;
-//		int expand_index;
-//	};
-//	std::queue<ss> que;
-//	ss s1;
-//	s1.selected_l = seq;
-//	s1.expand_index = 0;
-//	que.push(s1);
-//	while (!que.empty() && all_seq.size()<beam_width)
-//	{
-//		ss item = que.front();
-//		que.pop();
-//		if (item.expand_index >= 0 && item.expand_index < loop.size())
-//		{
-//			std::vector<int>& vec = index_map[loop[item.expand_index]];
-//			if (seq[vec[0]] == -1)		// not fix
-//			{
-//				if (s_len < beam_width)
-//				{
-//					s_len *= vec.size();
-//					for (int j = 0; j < vec.size(); ++j)
-//					{
-//						std::vector<int> se = item.selected_l;
-//						se[vec[j]] = 1;
-//						for (int t = 0; t < vec.size(); ++t)
-//						{
-//							if (j == t)
-//								continue;
-//							se[vec[t]] = 0;
-//						}
-//						ss new_s;
-//						new_s.expand_index = item.expand_index + 1;
-//						new_s.selected_l = se;
-//						que.push(new_s);
-//					}
-//				}
-//				else
-//				{
-//					std::vector<int> se = item.selected_l;
-//					se[vec[0]] = 1;
-//					for (int t = 1; t < vec.size(); ++t)
-//						se[vec[t]] = 0;
-//					ss new_s;
-//					new_s.expand_index = item.expand_index + 1;
-//					new_s.selected_l = se;
-//					que.push(new_s);
-//				}
-//			}
-//			else
-//			{
-//				ss new_s;
-//				new_s.expand_index = item.expand_index + 1;
-//				new_s.selected_l = item.selected_l;
-//				que.push(new_s);
-//			}
-//		}
-//		if (item.expand_index == loop.size())
-//		{
-//			all_seq.push_back(item.selected_l);
-//		}
-//	}
-//
-//	std::vector<int> best_l = seq;
-//	double min_err = 99999;
-//	int len = std::min<int>(beam_width, all_seq.size());
-//	for (int i = 0; i < len; ++i)
-//	{
-//		double err = LoopError(all_seq[i], index_map, loop);
-//		if (err < min_err)
-//		{
-//			min_err = err;
-//			best_l = all_seq[i];
-//		}
-//	}
-//
-//	if (min_err<err_threshold)
-//	{
-//		for (int i = 0; i < best_l.size();++i)
-//		{
-//			if (best_l[i]==1)
-//			{
-//				int v1 = traj_.data_[i].frame1_;
-//				int v2 = traj_.data_[i].frame2_;
-//				pose_visit[v1] = true;
-//				pose_visit[v2] = true;
-//			}
-//		}
-//		select_loop.push_back(loop);
-//		std::cout << "Successful!\n";
-//		std::cout << "loop Error: " << min_err << ";  Threshold:" << err_threshold << "\n";
-//		return best_l;
-//	}
-//	else
-//	{
-//		std::cout << "Fail!\n";
-//		std::cout << "loop Error: " << min_err << ";  Threshold:" << err_threshold << "\n";
-//		return seq;
-//	}
-//}
 
 
 void ProgressiveOpt::Opt()
@@ -551,7 +361,6 @@ void ProgressiveOpt::Opt()
 							err_threshold = one_loop.size() * error_threshold_;
 						
 						seq = BeamSearch(err_threshold, 1024, index_map, one_loop, seq);
-						std::cout << "";
 					}
 				}
 
@@ -602,28 +411,6 @@ void ProgressiveOpt::Opt()
 	//UnionFindSet(seq);
 	// Strategy 2: only use score. Useful for unordered dataset.
 	UnionFindSetNonSequential(seq);
-
-	//for (int i = 0; i < pose_visit.size(); ++i)
-	//	std::cout << "pose" << i << ":  " << pose_visit[i] << "\n";
-	/*for (int i = 0; i < traj_.data_.size(); ++i)
-	{
-		int v1 = traj_.data_[i].frame1_;
-		int v2 = traj_.data_[i].frame2_;
-		std::cout << v1 << "---" << v2 << ": " << seq[i] << "\n";
-	}*/
-
-	//helpSeq_.Save("C:/Users/range/Desktop/local2global_seq.txt", seq, traj_);
-
-	/*std::ofstream output_loop_file("C:/Users/range/Desktop/selected_loop.txt");
-	for (int i = 0; i < select_loop.size();++i)
-	{
-		output_loop_file << "Loop " << i << ": \n";
-		for (int j = 0; j < select_loop[i].size();++j)
-		{
-			output_loop_file << select_loop[i][j].frame1 << " " << select_loop[i][j].frame2 << " ";
-		}
-		output_loop_file << "\n\n";
-	}*/
 
 	if (judgeLinkAllVertex(seq, traj_))
 	{
@@ -881,11 +668,15 @@ void ProgressiveOpt::UnionFindSet(std::vector<int>& seq)
 	}
 	for (int i = 0; i < vertex2set.size(); ++i)
 	{
+#ifdef Verbose
 		std::cout << "vertex " << i << " belong set" << vertex2set[i] << "\n";
+#endif
 	}
 	
 	// select sequence edge
-	std::cout << "The first select consecutive image (score_threshold: >"<<score_threshold1_<<")\n";
+#ifdef Verbose
+	std::cout << "The first select consecutive image (score_threshold: >" << score_threshold1_ << ")\n";
+#endif
 	for (int i = 1; i < vertex2set.size();++i)
 	{
 		if (vertex2set[i-1] !=vertex2set[i])
@@ -894,7 +685,9 @@ void ProgressiveOpt::UnionFindSet(std::vector<int>& seq)
 			int v2 = i;
 			if (graph[v1*vertex_num + v2].score>score_threshold1_)
 			{
+#ifdef Verbose
 				std::cout << "\nChoose" << v1 << "----" << v2 << " to link all vertex\n";
+#endif
 				int id = graph[v1*vertex_num + v2].id_;
 				seq[id] = 1;
 				//union
@@ -925,8 +718,9 @@ void ProgressiveOpt::UnionFindSet(std::vector<int>& seq)
 		}
 	}
 	std::sort(graph.begin(), graph.end(), cmp());
-
+#ifdef Verbose
 	std::cout << "\n\n\nThe second select higher score matching (score_threshold: >" << score_threshold2_ << ")\n";
+#endif
 	for (int index = 0; index < graph.size();++index)
 	{
 		// judge the same set or not
@@ -939,8 +733,9 @@ void ProgressiveOpt::UnionFindSet(std::vector<int>& seq)
 		if (graph[index].score < score_threshold2_)
 			continue;
 		
-			
+#ifdef Verbose
 		std::cout << "\nChoose" << v1 << "----" << v2 << " to link all vertex\n";
+#endif
 		int id = graph[index].id_;
 		seq[id] = 1;
 
@@ -978,8 +773,9 @@ void ProgressiveOpt::UnionFindSet(std::vector<int>& seq)
 			output << "vertex " << i << " belong set" << vertex2set[i] << "\n";
 
 		output.close();
-
+#ifdef Verbose
 		std::cout << "Graph cannot connect, see file " << fail_file_ << " \n";
+#endif
 		exit(-1);
 	}
 	
@@ -1099,11 +895,15 @@ void ProgressiveOpt::UnionFindSetNonSequential(std::vector<int>& seq)
 	}
 	for (int i = 0; i < vertex2set.size(); ++i)
 	{
+#ifdef Verbose
 		std::cout << "vertex " << i << " belong set" << vertex2set[i] << "\n";
+#endif
 	}
 
 	std::sort(graph.begin(), graph.end(), cmp());
+#ifdef Verbose
 	std::cout << "\n\n\nThe second select higher score matching (score_threshold: >" << score_threshold2_ << ")\n";
+#endif
 	for (int index = 0; index < graph.size(); ++index)
 	{
 		// judge the same set or not
@@ -1116,8 +916,9 @@ void ProgressiveOpt::UnionFindSetNonSequential(std::vector<int>& seq)
 		if (graph[index].score < score_threshold2_)
 			continue;
 
-
+#ifdef Verbose
 		std::cout << "\nChoose" << v1 << "----" << v2 << " to link all vertex\n";
+#endif
 		int id = graph[index].id_;
 		seq[id] = 1;
 

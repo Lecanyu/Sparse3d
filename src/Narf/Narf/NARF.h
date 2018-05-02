@@ -3,6 +3,8 @@
 #include <pcl/features/range_image_border_extractor.h>
 #include <pcl/keypoints/narf_keypoint.h>
 #include <pcl/range_image/range_image.h>
+#include "Verbose.h"
+
 
 class NARF{
 	pcl::RangeImage range_image;
@@ -63,8 +65,9 @@ public:
 
 		keypoint_indices.clear();
 		narf_keypoint_detector.compute(keypoint_indices);
+#ifdef Verbose
 		std::cout << "Found " << keypoint_indices.points.size() << " key points.\n";
-
+#endif // Verbose
 
 		keypoints.points.resize(keypoint_indices.points.size());
 		for (size_t i = 0; i < keypoint_indices.points.size(); ++i)

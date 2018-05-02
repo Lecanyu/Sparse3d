@@ -117,9 +117,9 @@ int main(int argc, char** argv)
 
 			int img1 = i;
 			int img2 = j;
-
+#ifdef Verbose
 			std::cout << "Begin registration geometric correspondence between (" << img1 << ", " << img2 << ")\n";
-
+#endif
 			pcl::PointCloud<pcl::PointXYZ>::Ptr keypoint1 = keypoints[img1];
 			pcl::PointCloud<pcl::FPFHSignature33>::Ptr descriptor1 = descriptors[img1];
 
@@ -130,7 +130,9 @@ int main(int argc, char** argv)
 				continue;
 
 			// guess correspondence
+#ifdef Verbose
 			std::cout << "Guess correspondences...";
+#endif
 			pcl::CorrespondencesPtr corps(new pcl::Correspondences());
 			pcl::KdTreeFLANN<pcl::FPFHSignature33> match_search;
 			match_search.setInputCloud(descriptor2);
@@ -149,19 +151,29 @@ int main(int argc, char** argv)
 					corps->push_back(corr);
 				}
 			}
+#ifdef Verbose
 			std::cout << "Done!\n";
+#endif
+			
 
 			if (corps->size() < 4)
 				continue;
 
 			//Graph matching
+#ifdef Verbose
 			std::cout << "Graph matching...";
+#endif
+			
 			GraphMatching gm(*keypoint1, *keypoint2, *corps);
 			pcl::CorrespondencesPtr	graph_corps = gm.ComputeCorrespondenceByEigenVec();
+#ifdef Verbose
 			std::cout << "Done!\n";
+#endif
 			if (graph_corps->size() < 4)
 			{
+#ifdef Verbose
 				std::cout << "cannot find enough correspondence\n";
+#endif
 				continue;
 			}
 
@@ -179,15 +191,17 @@ int main(int argc, char** argv)
 
 			if (K_set < buidCorp._total_size / 3 || K_set == 0 || buidCorp._total_size == 0)
 			{
+#ifdef Verbose
 				std::cout << "Align fail!\n\n\n";
+#endif
 				continue;
 			}
 
 			Eigen::Matrix< double, 6, 6 > info_mat = buidCorp.ComputeInfoMatrix(buidCorp._correspondences, scene1_ds, scene2_ds);
-
+#ifdef Verbose
 			std::cout << K_set << " point pair are found as correspondence in point cloud. " << std::endl;
 			std::cout << "Align successfully!\n\n";
-
+#endif
 			double score = (double)K_set / (double)buidCorp._total_size;
 
 			InformationMatrix im = info_mat;
@@ -201,13 +215,8 @@ int main(int argc, char** argv)
 	}
 
 	//save
-	std::cout << "Save trajectory file...";
 	traj.SaveToSPFile(traj_file);
-	std::cout << "Done!\n";
-
-	std::cout << "Save information file...";
 	info.SaveToSPFile(info_file);
-	std::cout << "Done!\n";
 
 	return 0;
 }

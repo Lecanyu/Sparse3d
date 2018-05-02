@@ -78,6 +78,7 @@
     <ClInclude Include="BuildCorpPointSet.h" />
     <ClInclude Include="GraphMatching.h" />
     <ClInclude Include="SubsidiaryFunction.h" />
+    <ClInclude Include="Verbose.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

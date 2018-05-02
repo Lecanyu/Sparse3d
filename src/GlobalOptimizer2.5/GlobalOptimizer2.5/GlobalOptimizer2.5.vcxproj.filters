@@ -53,5 +53,8 @@
     <ClInclude Include="vertigo3d\vertex_switchLinear.h">
       <Filter>Source Files\vertigo3d</Filter>
     </ClInclude>
+    <ClInclude Include="Verbose.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -72,6 +72,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="NARF.h" />
+    <ClInclude Include="Verbose.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

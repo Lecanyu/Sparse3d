@@ -23,5 +23,8 @@
     <ClInclude Include="Png2Cloud.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Verbose.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

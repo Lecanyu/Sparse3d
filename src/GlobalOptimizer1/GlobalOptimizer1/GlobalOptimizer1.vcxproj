@@ -76,6 +76,7 @@
     <ClInclude Include="GraphLoopDetect.h" />
     <ClInclude Include="helper.h" />
     <ClInclude Include="ProgressiveOpt.h" />
+    <ClInclude Include="Verbose.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

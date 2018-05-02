@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Png2Cloud.h" />
+    <ClInclude Include="Verbose.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
