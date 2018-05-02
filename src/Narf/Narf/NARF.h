@@ -65,7 +65,7 @@ public:
 
 		keypoint_indices.clear();
 		narf_keypoint_detector.compute(keypoint_indices);
-#ifdef Verbose
+#ifdef Verbose 
 		std::cout << "Found " << keypoint_indices.points.size() << " key points.\n";
 #endif // Verbose
 
