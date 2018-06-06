@@ -1,3 +1,6 @@
+// Registration from depth image by using NARF feature and FPFHSignature33 descriptor
+//
+
 #include <vector>
 #include <iostream>
 #include <string>

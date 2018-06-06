@@ -81,6 +81,7 @@
     <ClInclude Include="Verbose.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="GraphMatching.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SubsidiaryFunction.cpp" />
   </ItemGroup>

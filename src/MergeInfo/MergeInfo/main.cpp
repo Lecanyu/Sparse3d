@@ -1,3 +1,6 @@
+// Merge all of alignment candidates to one file
+//
+
 #include <fstream>
 #include <iostream>
 #include <vector>

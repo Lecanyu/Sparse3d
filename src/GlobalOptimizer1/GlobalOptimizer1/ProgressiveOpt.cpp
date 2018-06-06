@@ -406,7 +406,7 @@ void ProgressiveOpt::Opt()
 				break;
 		}
 	}
-	// connect all vertex
+	// connect the remaining vertices
 	// Strategy 1: use sequential+score. Better result 
 	//UnionFindSet(seq);
 	// Strategy 2: only use score. Useful for unordered dataset.
@@ -415,7 +415,6 @@ void ProgressiveOpt::Opt()
 	if (judgeLinkAllVertex(seq, traj_))
 	{
 		ComputeInitPose(seq);
-		//pose_.SaveToFile(init_pose_file_);
 		ComputePose(seq);
 		pose_.SaveToFile(pose_file_);
 	}

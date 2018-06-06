@@ -1,3 +1,6 @@
+// Preprocessing. Convert images to point clouds, calculate normals and etc... 
+//
+
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 

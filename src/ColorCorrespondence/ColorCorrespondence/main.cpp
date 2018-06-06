@@ -41,16 +41,6 @@ int main(int argc, char** argv)
 	traj_file = argv[7];
 	info_file = argv[8];
 
-	/*pointcloud_dir = "G:/Sparse3D_Run/ICL_NUIM_office/sandbox_15/pointcloud/";
-	pointcloud_ds_dir = "G:/Sparse3D_Run/ICL_NUIM_office/sandbox_15/pointcloud_ds/";
-	depth_dir = "G:/Sparse3D_Run/ICL_NUIM_office/sandbox_15/depth/";
-	correspendence_file = "G:/Sparse3D_Run/ICL_NUIM_office/sandbox_15/sift_correspondence.txt";
-	camera_file = "G:/Sparse3D_Run/ICL_NUIM_office/sandbox_15/camera_para.txt";
-	score_max_depth = atof("4.0");
-
-	traj_file = "G:/Sparse3D_Run/ICL_NUIM_office/sandbox_15/sift_traj.txt";
-	info_file = "G:/Sparse3D_Run/ICL_NUIM_office/sandbox_15/sift_info.txt";*/
-
 	int num_of_pc = std::count_if(
 		boost::filesystem::directory_iterator(boost::filesystem::path(depth_dir)),
 		boost::filesystem::directory_iterator(),
