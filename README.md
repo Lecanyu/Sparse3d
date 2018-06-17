@@ -17,9 +17,7 @@ We have tested this libraries on Windows10 x64 operation system with Microsoft V
 
 The following install instruction only works on Windows10 X64 OS and Microsoft Visual Studio 2013 (x86 solution).
 
-For your convenience, here is the 3rdParty download link:
-
-https://drive.google.com/open?id=1mQyDLpdVoQKWVBcRU9iTdNWRnw1liQKY
+For your convenience, the 3rd dependencies can be downloaded [here](https://drive.google.com/open?id=1mQyDLpdVoQKWVBcRU9iTdNWRnw1liQKY).
 
 
 Modify environment variables
@@ -32,9 +30,7 @@ When you finish all of environment configuration, you can use VS2013 to build th
 
 
 # 3. Datasets
-We have published our experiment datasets:
-
-https://drive.google.com/open?id=1q1NG6_shWjXbohKKMSA9b7OHsfc54L6G.
+Our experiment datasets can be downloaded [here](https://drive.google.com/open?id=1q1NG6_shWjXbohKKMSA9b7OHsfc54L6G).
 
 
 # 4. Citation
