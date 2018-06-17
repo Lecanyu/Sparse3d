@@ -1,6 +1,6 @@
 # Sparse3D
 
-Sparse3D is an offline reconstruction system. It is able to robustly reconstruction sparse RGB-D input data (e.g. fast-moving scanning, small inter-frame overlap and etc). 
+Sparse3D is an offline reconstruction system. It is able to robustly handle sparse RGB-D input data (e.g. fast-moving scanning, small inter-frame overlap and etc). 
 
 Please check our published paper for more details.
 
