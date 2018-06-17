@@ -36,7 +36,6 @@ We have published our experiment datasets:
 
 https://drive.google.com/open?id=1q1NG6_shWjXbohKKMSA9b7OHsfc54L6G.
 
---------------------
 
 # 4. Citation
 If this implementation is useful in your research, please cite
