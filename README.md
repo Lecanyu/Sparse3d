@@ -26,7 +26,7 @@ After Install/unzip all of dependencies. You should create some environment vari
 
 
 # 2. Build
-When you finish all of environment configuration, you can use VS2013 to build the whole project. If all goes well, you can run it without any errors.
+When you finish all of environment configuration, you can use VS2013 to build the whole project. If all things go well, you can run it without any errors.
 
 
 # 3. Datasets
